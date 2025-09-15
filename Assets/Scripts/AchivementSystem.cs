@@ -7,9 +7,19 @@ public class AchivementSystem : MonoBehaviour, Observer
     // OnNotify is called when Achievement System receives a notification from an object
     public void OnNotify(object obj, NotificationType notificationType)
     {
-        if (notificationType == NotificationType.GreenCubeCollected)
+        if (notificationType == NotificationType.numberBox)
         {
-            Debug.Log("Congrats! Achievement unlocked! (Observer Pattern version)");
+            Debug.Log("Congrats on grabbing the numberbox!");
+        }
+
+        if(notificationType == NotificationType.box)
+        {
+            Debug.Log("Congrats on grabbing the box!");
+        }
+
+        if (notificationType == NotificationType.container_box)
+        {
+            Debug.Log("Congrats! An item was put into the container.");
         }
     }
 
