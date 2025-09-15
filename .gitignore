@@ -100,4 +100,4 @@ InitTestScene*.unity*
 
 .DS_Store
 /Capston_proj2_BurstDebugInformation_DoNotShip/
-/scenes/Capston_proj2_BurstDebugInformation_DoNotShip/
+**/Scenes/Capston_proj2_BurstDebugInformation_DoNotShip/
