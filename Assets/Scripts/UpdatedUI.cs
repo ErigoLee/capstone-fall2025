@@ -11,7 +11,6 @@ public class UpdatedUI : MonoBehaviour
     {
        Cube.cubeEventAct+=UpdateBoxText;
        NumberCube.numCubEventAct+=UpdateNumBoxText;
-       Container.ContainerEventAct +=UpdateConText;
     }
 
     // this method will be called when cube notifies us that it was collected
@@ -23,11 +22,6 @@ public class UpdatedUI : MonoBehaviour
     void UpdateBoxText(object c)
     {
         GetComponent<TextMeshProUGUI>().text = "Congrats on grabbing the box!";
-    }
-
-    void UpdateConText(object c)
-    {
-        GetComponent<TextMeshProUGUI>().text = "Congrats! An item was put into the container.";
     }
     
 }
