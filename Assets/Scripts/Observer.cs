@@ -9,6 +9,7 @@ public interface Observer
 
 public enum NotificationType
 {
-    RedCubeCollected,
-    GreenCubeCollected
+    numberBox,
+    box,
+    container_box
 }
