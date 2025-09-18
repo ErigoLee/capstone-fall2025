@@ -12,7 +12,12 @@ public class UpdatedUI : MonoBehaviour
        Cube.cubeEventAct+=UpdateBoxText;
        NumberCube.numCubEventAct+=UpdateNumBoxText;
     }
-
+    void OnDestroy()
+    {
+       Cube.cubeEventAct-=UpdateBoxText;
+       NumberCube.numCubEventAct-=UpdateNumBoxText;
+    }
+    
     // this method will be called when cube notifies us that it was collected
     void UpdateNumBoxText(object c)
     {
@@ -22,6 +27,12 @@ public class UpdatedUI : MonoBehaviour
     void UpdateBoxText(object c)
     {
         GetComponent<TextMeshProUGUI>().text = "Congrats on grabbing the box!";
+    }
+
+    public void GestureRecognized(GestureType gestureType){
+
+        GetComponent<TextMeshProUGUI>().text = "Gesture recognized as: " + gestureType;
+
     }
     
 }
