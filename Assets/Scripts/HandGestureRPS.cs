@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using static OVRSkeleton;
 
-public enum GestureType { None, Rock, Paper, Scissors }
+//public enum GestureType { None, Rock, Paper, Scissors }
 public class HandGestureRPS : MonoBehaviour
 {
 
@@ -47,7 +47,7 @@ public class HandGestureRPS : MonoBehaviour
         float middleCurl = FingerCurl(BoneId.Hand_Middle1, BoneId.Hand_Middle2, BoneId.Hand_Middle3, BoneId.Hand_MiddleTip);
         float ringCurl = FingerCurl(BoneId.Hand_Ring1, BoneId.Hand_Ring2, BoneId.Hand_Ring3, BoneId.Hand_RingTip);
         float pinkyCurl = FingerCurl(BoneId.Hand_Pinky1, BoneId.Hand_Pinky2, BoneId.Hand_Pinky3, BoneId.Hand_PinkyTip);
-
+        
         bool thumbExtended = thumbCurl < extendedThreshold;
         bool indexExtended = indexCurl < extendedThreshold;
         bool middleExtended = middleCurl < extendedThreshold;

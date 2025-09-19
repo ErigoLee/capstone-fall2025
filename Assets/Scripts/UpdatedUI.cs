@@ -34,5 +34,6 @@ public class UpdatedUI : MonoBehaviour
         GetComponent<TextMeshProUGUI>().text = "Gesture recognized as: " + gestureType;
 
     }
+
     
 }
